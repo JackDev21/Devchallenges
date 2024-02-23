@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.notFound {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  top: 40px;
+  left: 77px;
+}
+
+.notFound h1 {
+  font-family: Inconsolata, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+}
+
+
+picture {
+  width: auto;
+  display: flex;
+  position: relative;
+  top: 180px;
+  right: 460px;
+}
+
+
+img {
+  width: 540px;
+  height: 450px;
+}
+
+.text {
+  font-family: "Space Mono", sans-serif;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  place-content: flex-end center;
+  align-items: center;
+}
+
+.text h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333;
+  width: 586px;
+  height: 190px;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+  bottom: 160px;
+  left: 200px;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+  width: 540px;
+  height: 140px;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+  bottom: 125px;
+  left: 200px;
+}
+
+button {
+  width: 216px;
+  height: 68px;
+  background: #333;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.035em;
+  cursor: pointer;
+  position: relative;
+  bottom: 130px;
+  left: 200px;
+}
+
+footer {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.035em;
+  color: #BDBDBD;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .notFound {
+    top: 10px;
+    left: 10px;
+  }
+
+  picture {
+    top: 70px;
+    right: 0;
+  }
+
+  img {
+    width: 365px;
+    height: 330px;
+  }
+
+  .text h2 {
+    font-size: 31px;
+    top: 50px;
+    left: 30px;
+    width: 265px;
+    line-height: 40px;
+  }
+
+  .text p {
+    left: 5px;
+    bottom: 60px;
+    font-size: 18px;
+    width: auto;
+    display: flex;
+    text-align: center;
+  }
+
+  button {
+    bottom: 85px;
+    left: 5px;
+  }
+}

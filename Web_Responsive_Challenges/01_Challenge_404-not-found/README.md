@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">{404 ERROR}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -22,22 +22,14 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-  - [Built With](#built-with)
-- [Features](#features)
-- [Contact](#contact)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-[screenshot](error404.png)!
-[screenshot mobile](404errormobile.png)
+![screenshot](error404.png)
+![screenshot mobile](404errormobile.png)
 
 
 

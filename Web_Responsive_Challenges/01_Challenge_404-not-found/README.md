@@ -53,6 +53,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website ![your-website.com](https://josecantoportfolio.vercel.app/)
-- GitHub ![@your-username](https://github.com/JackDev21)
+- Website [(https://josecantoportfolio.vercel.app/)]
+- GitHub [(https://github.com/JackDev21)]
 

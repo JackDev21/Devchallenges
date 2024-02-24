@@ -5,19 +5,15 @@
 ## Lista de Desafíos
 
 ### Desafío 1: [404 Not Found](https://legacy.devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)
-- **Descripción:** Breve descripción del desafío y lo que aprendí.
+- **Descripción:**  Diseño de pagina de error
 - **Tecnologías Utilizadas:** HTML, CSS
-- **Enlace a mi Solución:** [Enlace al repositorio donde está mi solución al desafío.](https://github.com/JackDev21/Devchallenges/tree/main/Web_Responsive_Challenges/01_Challenge_404-not-found)
+- **Enlace a mi Solución:** (https://github.com/JackDev21/Devchallenges/tree/main/Web_Responsive_Challenges/01_Challenge_404-not-found)
 
 ### Desafío 2: [Responsive Blog Card](https://devchallenges.io/challenge/27)
-- **Descripción:** Breve descripción del desafío y lo que aprendí.
+- **Descripción:** Una tarjeta de blog 
 - **Tecnologías Utilizadas:** HTML, CSS
-- **Enlace a mi Solución:** [Enlace al repositorio donde está mi solución al desafío.](https://github.com/JackDev21/Devchallenges/tree/main/Web_Responsive_Challenges/dccl--responsive-mini-blog-card)
+- **Enlace a mi Solución:** (https://github.com/JackDev21/Devchallenges/tree/main/Web_Responsive_Challenges/dccl--responsive-mini-blog-card)
 
-### Desafío 3: [Nombre del Desafío](enlace-al-desafio)
-- **Descripción:** Breve descripción del desafío y lo que aprendí.
-- **Tecnologías Utilizadas:** Lista de tecnologías que empleé para completar el desafío.
-- **Enlace a mi Solución:** Enlace al repositorio donde está mi solución al desafío.
 
 ## Sobre mí
 Aquí puedes agregar una breve descripción sobre ti y tus objetivos como desarrollador. También puedes incluir enlaces a tus perfiles en redes sociales o tu sitio web si lo tienes.

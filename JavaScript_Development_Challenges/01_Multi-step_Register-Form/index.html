@@ -10,9 +10,51 @@
 
 <body>
   <div class="container">
-    <div class="form-container">
+    <div class="form-container" id="step1">
+      <form class="form">
+        <h1>Register</h1>
+        <div class="name">
+          <h5 class="title-input">Name</h5>
+          <input id="nameInput" class="input-text" type="text" placeholder="enter your name" required>
+        </div>
+        <div class="email">
+          <h5 class="title-input">Email</h5>
+          <input id="emailInput" class="input-text" type="text" placeholder="example@gmail.com" required>
+        </div>
+        <button type="button" class="next-btn">Continue</button>
+      </form>
+    </div>
+
+    <div class="form-container" id="step2" style="display: none;">
+      <h1>Which topics are you interested in?</h1>
+      <ul>
+        <li><a href="#" class="select" id="software">
+            Software Development
+          </a></li>
+        <li> <a href="#" class="select" id="ux">
+            User Experience
+          </a></li>
+        <li><a href="#" class="select" id="design">
+            Graphic Design
+          </a></li>
+      </ul>
+      <button type="button" class="next-btn">Continue</button>
+    </div>
+
+    <div class="form-container" id="step3" style="display: none;">
+      <h1>Summary</h1>
+      <p>Name:</p>
+      <p>Email:</p>
+      <h6>Topics:</h6>
+      <p>User Experience</p>
+      <p>Graphic Design</p>
+      <button type="button" class="next-btn">Confirm</button>
     </div>
   </div>
+
+  <span id="stepIndicator">Step 1 of 3</span>
+
+
 
 </body>
 <script src="./main.js"></script>

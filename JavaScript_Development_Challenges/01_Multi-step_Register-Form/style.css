@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.woff2') format('woff2'),
+    url('./fonts/Inter-Regular.woff') format('woff'),
+    url('./fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,18 +23,122 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100%;
   background: linear-gradient(to right bottom, #271D51, #121826, #121826, #121826, #121826, #271D51);
+  color: #E5E7EB;
+  font-family: 'Inter', sans-serif;
 }
 
-.container {
-  border: 2px solid #fff;
-  border-radius: 5px;
-  padding: 30px 40px;
-  width: 350px;
+.form-container {
+  border: 1px solid #e5e7eb4d;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 10px;
+  width: 100%;
+  height: auto;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: #212936;
   backdrop-filter: blur(10px);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #394150;
+  color: #A1A1A9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.select:hover {
+  background-color: #652CD1;
+  color: #E5E7EB;
+}
+
+.title-input {
+  color: #A1A1A9;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.input-text {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #394150;
+  color: #a1a1a9bb;
+  border: 1px solid #a1a1a985;
+  border-radius: 10px;
+}
+
+
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+li {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 7px;
+  cursor: pointer;
+
+
+}
+
+a {
+  text-decoration: none;
+  width: 800px;
+
+}
+
+
+.next-btn {
+  width: 100px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #6F3DDA;
+  color: #e5e7ebda;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+#stepIndicator {
+  color: #4D5562;
+  font-size: 12px;
 }

@@ -28,13 +28,13 @@
     <div class="form-container" id="step2" style="display: none;">
       <h1>Which topics are you interested in?</h1>
       <ul>
-        <li><a href="#" class="select" id="software">
+        <li><a href="#" class="options" id="software">
             Software Development
           </a></li>
-        <li> <a href="#" class="select" id="ux">
+        <li> <a href="#" class="options" id="ux">
             User Experience
           </a></li>
-        <li><a href="#" class="select" id="design">
+        <li><a href="#" class="options" id="design">
             Graphic Design
           </a></li>
       </ul>
@@ -43,11 +43,12 @@
 
     <div class="form-container" id="step3" style="display: none;">
       <h1>Summary</h1>
-      <p>Name:</p>
-      <p>Email:</p>
+      <p id="selectedName"></p>
+      <p id="selectedEmail"></p>
       <h6>Topics:</h6>
-      <p>User Experience</p>
-      <p>Graphic Design</p>
+      <ul>
+        <li class="selected" data-option=""></li>
+      </ul>
       <button type="button" class="next-btn">Confirm</button>
     </div>
   </div>

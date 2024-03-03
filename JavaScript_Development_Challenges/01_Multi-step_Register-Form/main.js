@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const nextBtns = document.querySelectorAll('.next-btn');
+  // Selecciona los botones de cada paso
+  const nextBtnStep1 = document.querySelector('.next-btn-step1');
+  const nextBtnStep2 = document.querySelector('.next-btn-step2');
+  const nextBtnStep3 = document.querySelector('.next-btn-step3');
+
+  // Agrega event listeners a los botones de cada paso
+  nextBtnStep1.addEventListener('click', function () {
+    nextStep(1);
+  });
+
+  nextBtnStep2.addEventListener('click', function () {
+    nextStep(2);
+  });
+
+  nextBtnStep3.addEventListener('click', function () {
+    nextStep(3);
+  });
 
   const step1 = document.querySelector('#step1');
   const step2 = document.querySelector('#step2');
@@ -8,27 +24,39 @@ document.addEventListener('DOMContentLoaded', function () {
   const stepIndicator = document.querySelector('#stepIndicator');
   let currentStep = 1;
 
-  const nextStep = () => {
+  const nextStep = (stepNumber) => {
     if (!infoRequired()) {
       return;
     }
 
-    if (currentStep === 1) {
+    if (currentStep === 1 && stepNumber === 1) {
       step1.style.display = 'none';
       step2.style.display = 'flex';
       currentStep++;
       infoStep1();
-    } else if (currentStep === 2) {
+    } else if (currentStep === 2 && stepNumber === 2) {
+      const selectedOptions = step2.querySelectorAll('.selected');
+      if (selectedOptions.length === 0) {
+        alert('Please select at least one option');
+        return;
+      }
+      // Aquí movemos las opciones seleccionadas al paso 3
+      selectedOptions.forEach(option => {
+        const selectedOption = document.createElement('li');
+        selectedOption.textContent = option.textContent;
+        selectedOption.classList.add('selected');
+        selectedOption.setAttribute('data-option', option.id);
+        step3.querySelector('ul').appendChild(selectedOption);
+      });
       step2.style.display = 'none';
       step3.style.display = 'flex';
       currentStep++;
-    } else if (currentStep === 3) {
+    } else if (currentStep === 3 && stepNumber === 3) {
       alert('Form submitted successfully!');
     }
 
     stepIndicator.textContent = `Step ${currentStep} of 3`;
   };
-
 
   const infoRequired = () => {
     const name = document.querySelector('#nameInput').value;
@@ -36,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (name === '' || email === '') {
       alert('Please fill in all required fields');
-      return false
+      return false;
     }
-    return true
-  }
+    return true;
+  };
 
   const infoStep1 = () => {
     const name = document.querySelector('#nameInput').value;
@@ -47,15 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('#selectedName').textContent = `Name: ${name}`;
     document.querySelector('#selectedEmail').textContent = `Email: ${email}`;
-  }
-
-  const isOptionSelected = () => {
-    // Verificar si al menos una opción ha sido seleccionada en el paso 2
-    const selectedOptions = document.querySelectorAll('#step2 .selected');
-    return selectedOptions.length > 0;
-  }
-
-
+  };
 
   // Agregar o eliminar opciones seleccionadas
   const options = document.querySelectorAll('.options');
@@ -67,21 +87,14 @@ document.addEventListener('DOMContentLoaded', function () {
       selectedOption.setAttribute('data-option', option.id);
 
       // Verificar si la opción ya está seleccionada
-      const existingOption = step3.querySelector(`ul li.selected[data-option="${option.id}"]`);
+      const existingOption = step2.querySelector(`ul li.selected[data-option="${option.id}"]`);
       if (existingOption) {
         // Si ya está seleccionada, la eliminamos
         existingOption.remove();
       } else {
         // Si no está seleccionada, la agregamos
-
-        step3.querySelector('ul').appendChild(selectedOption);
+        step2.querySelector('ul').appendChild(selectedOption);
       }
     });
   });
-
-
-  nextBtns.forEach(btn => {
-    btn.addEventListener('click', nextStep);
-  });
-
 });

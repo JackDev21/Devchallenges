@@ -21,24 +21,18 @@
           <h5 class="title-input">Email</h5>
           <input id="emailInput" class="input-text" type="text" placeholder="example@gmail.com" required>
         </div>
-        <button type="button" class="next-btn">Continue</button>
+        <button type="button" class="next-btn-step1 btn">Continue</button>
       </form>
     </div>
 
     <div class="form-container" id="step2" style="display: none;">
       <h1>Which topics are you interested in?</h1>
       <ul>
-        <li><a href="#" class="options" id="software">
-            Software Development
-          </a></li>
-        <li> <a href="#" class="options" id="ux">
-            User Experience
-          </a></li>
-        <li><a href="#" class="options" id="design">
-            Graphic Design
-          </a></li>
+        <li><a href="#" class="options" id="software">Software Development</a></li>
+        <li><a href="#" class="options" id="ux">User Experience</a></li>
+        <li><a href="#" class="options" id="design">Graphic Design</a></li>
       </ul>
-      <button type="button" class="next-btn">Continue</button>
+      <button type="button" class="next-btn-step2 btn">Continue</button>
     </div>
 
     <div class="form-container" id="step3" style="display: none;">
@@ -46,18 +40,14 @@
       <p id="selectedName"></p>
       <p id="selectedEmail"></p>
       <h6>Topics:</h6>
-      <ul>
-        <li class="selected" data-option=""></li>
-      </ul>
-      <button type="button" class="next-btn">Confirm</button>
+      <ul></ul>
+      <button type="button" class="next-btn-step3 btn">Confirm</button>
     </div>
   </div>
 
   <span id="stepIndicator">Step 1 of 3</span>
 
-
-
+  <script src="./main.js"></script>
 </body>
-<script src="./main.js"></script>
 
 </html>

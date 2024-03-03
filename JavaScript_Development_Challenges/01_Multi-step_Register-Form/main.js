@@ -81,20 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const options = document.querySelectorAll('.options');
   options.forEach(option => {
     option.addEventListener('click', function () {
-      const selectedOption = document.createElement('li');
-      selectedOption.textContent = option.textContent;
-      selectedOption.classList.add('selected');
-      selectedOption.setAttribute('data-option', option.id);
-
-      // Verificar si la opción ya está seleccionada
-      const existingOption = step2.querySelector(`ul li.selected[data-option="${option.id}"]`);
-      if (existingOption) {
-        // Si ya está seleccionada, la eliminamos
-        existingOption.remove();
-      } else {
-        // Si no está seleccionada, la agregamos
-        step2.querySelector('ul').appendChild(selectedOption);
-      }
+      // Alternar la clase 'selected' para cambiar el estilo
+      option.classList.toggle('selected');
     });
   });
 });

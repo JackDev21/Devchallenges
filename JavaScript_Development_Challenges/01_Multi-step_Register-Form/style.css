@@ -35,10 +35,10 @@ body {
 .form-container {
   border: 1px solid #e5e7eb4d;
   border-radius: 10px;
-  padding: 10px 10px;
+  padding: 5px 5px;
   margin: 10px;
   width: 460px;
-  height: 380px;
+  height: 355px;
   color: #fff;
   background: #212936;
   backdrop-filter: blur(10px);
@@ -179,6 +179,78 @@ a {
   text-decoration: none;
   font-size: 14px;
 }
+
+/*Step 3 */
+
+
+.title-step3 {
+  margin: 0 0 40px 0;
+}
+
+h6 {
+
+  color: #A1A1A9;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+}
+
+.info-step3 {
+  width: 100%;
+  padding: 5px;
+  margin: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+
+}
+
+.info {}
+
+.ul-step3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.ul-step3 li {
+  position: relative;
+  padding-left: 20px;
+
+}
+
+.ul-step3 li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #A1A1A9;
+}
+
+.label {
+  color: #A1A1A9;
+  margin-bottom: 30px;
+
+}
+
+.name {
+
+  color: #E5E7EB;
+
+}
+
+.email {
+  color: #E5E7EB;
+
+}
+
+
+
+
+
+
 
 
 

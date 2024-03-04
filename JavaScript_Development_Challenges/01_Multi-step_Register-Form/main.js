@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const name = document.querySelector('#nameInput').value;
     const email = document.querySelector('#emailInput').value;
 
-    document.querySelector('#selectedName').textContent = `Name: ${name}`;
-    document.querySelector('#selectedEmail').textContent = `Email: ${email}`;
+    document.querySelector('#selectedName').textContent = `${name}`;
+    document.querySelector('#selectedEmail').textContent = `${email}`;
   };
 
   // Agregar o eliminar opciones seleccionadas

@@ -36,18 +36,22 @@
     </div>
 
     <div class="form-container" id="step3" style="display: none;">
-      <h1>Summary</h1>
-      <p id="selectedName"></p>
-      <p id="selectedEmail"></p>
-      <h6>Topics:</h6>
-      <ul></ul>
+      <h1 class="title-step3">Summary</h1>
+      <div class="info-step3">
+        <div class="info">
+          <p><span class="label">Name:</span> <span id="selectedName" class="name"></span></p>
+          <p><span class="label">Email:</span> <span id="selectedEmail" class="email"></span></p>
+        </div>
+        <h6>Topics:</h6>
+        <ul class="ul-step3"></ul>
+      </div>
       <button type="button" class="next-btn-step3 btn">Confirm</button>
     </div>
-  </div>
 
-  <span id="stepIndicator">Step 1 of 3</span>
 
-  <script src="./main.js"></script>
+    <span id="stepIndicator">Step 1 of 3</span>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>

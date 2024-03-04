@@ -268,7 +268,15 @@ h6 {
   cursor: pointer;
   font-size: 12px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
+.btn:hover {
+  background-color: #652CD1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  transform: translateY(3px);
 }
 
 #stepIndicator {

@@ -206,7 +206,11 @@ h6 {
 
 }
 
-.info {}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 .ul-step3 {
   display: flex;
@@ -248,12 +252,6 @@ h6 {
 
 
 
-
-
-
-
-
-
 .btn {
   width: 125px;
   height: 40px;
@@ -272,4 +270,37 @@ h6 {
 #stepIndicator {
   color: #4D5562;
   font-size: 12px;
+}
+
+
+.container-indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+#circleContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 5px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4D5562;
+  margin: 0 5px;
+}
+
+.circle.active {
+  background-color: #6F3DDA;
+
+}
+
+.circle.with-shadow {
+  box-shadow: 0 0 0px 5px rgb(255 255 255 / 10%);
 }

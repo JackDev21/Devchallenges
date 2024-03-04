@@ -61,6 +61,18 @@ document.addEventListener('DOMContentLoaded', function () {
         selectedOption.setAttribute('data-option', option.id);
         step3.querySelector('ul').appendChild(selectedOption);
       });
+
+      // Obtener todos los elementos con la clase "li-container"
+      const liContainers = document.querySelectorAll('.li-container');
+
+      // Agregar el evento de clic a cada elemento para pintar el estado de selección
+      liContainers.forEach(container => {
+        container.addEventListener('click', () => {
+          // Alternar la clase "selected" para cambiar el estado de selección
+          container.classList.toggle('selected');
+        });
+      });
+
       step2.style.display = 'none'; // Oculta el paso 2
       step3.style.display = 'flex'; // Muestra el paso 3
       currentStep++; // Incrementa el número del paso actual
@@ -116,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
     circles.forEach((circle, index) => {
       if (index === stepNumber) {
         // Si el índice coincide con el número del paso, agrega la clase 'active' y 'with-shadow' al círculo
+
         circle.classList.add('active');
         circle.classList.add('with-shadow');
       } else if (index < stepNumber) {

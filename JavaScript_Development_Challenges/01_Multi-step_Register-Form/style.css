@@ -142,7 +142,11 @@ h1 {
 .li-container:hover {
   background-color: #652CD1;
   color: #E5E7EB;
+}
 
+.li-container.selected {
+  background-color: #652CD1;
+  color: #E5E7EB;
 }
 
 .li-container:hover,

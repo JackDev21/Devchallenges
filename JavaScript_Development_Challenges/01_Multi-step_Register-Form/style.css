@@ -30,6 +30,8 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Step 1 */
+
 .form-container {
   border: 1px solid #e5e7eb4d;
   border-radius: 10px;
@@ -74,6 +76,81 @@ h1 {
 
 
 
+
+.title-input {
+  color: #A1A1A9;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+
+
+.input-text {
+  width: 380px;
+  height: 45px;
+  padding: 5px 5px 5px 15px;
+  margin: 10px 10px 10px 10px;
+  background-color: #39415004;
+  color: #a1a1a9;
+  border: 2px solid #a1a1a95d;
+  border-radius: 10px;
+
+
+}
+
+.input-text::placeholder {
+  color: #a1a1a942;
+  margin: 10px;
+
+}
+
+
+/*Step2 */
+
+
+.title-step2 {
+  font-size: 20px;
+  right: 0;
+  margin: 0px 10px 30px 10px;
+  color: #ccccd6;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.li-container {
+  width: 400px;
+  padding: 15px 20px;
+  margin: 10px 10px 10px 10px;
+  border: 1px solid #e5e7eb23;
+  border-radius: 15px;
+  color: #A1A1A9;
+  background-color: #394150ab;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.li-container:hover {
+  background-color: #652CD1;
+  color: #E5E7EB;
+
+}
+
+.li-container:hover,
+.li-container:hover * {
+  color: #E5E7EB;
+}
+
+
 .select {
   width: 100%;
   padding: 10px 20px;
@@ -85,70 +162,31 @@ h1 {
   font-size: 14px;
 }
 
-.select:hover {
-  background-color: #652CD1;
-  color: #E5E7EB;
-}
-
-.title-input {
-  color: #A1A1A9;
-  font-size: 12px;
-  margin-left: 5px;
-}
-
-.input-text {
-  width: 380px;
-  height: 45px;
-  padding: 5px 5px;
-  margin: 10px;
-  background-color: #39415004;
-  color: #a1a1a9;
-  border: 2px solid #a1a1a95d;
-  border-radius: 10px;
-}
-
-.input-text::placeholder {
-  color: #a1a1a942;
-}
-
-
 
 ul {
+  margin-bottom: 15px;
+  margin-top: 0px;
   list-style: none;
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-}
-
-li {
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin: 7px;
-  cursor: pointer;
-
-
 }
 
 a {
+  color: #A1A1A9;
   text-decoration: none;
-  width: auto;
-
+  font-size: 14px;
 }
+
 
 
 .btn {
   width: 125px;
   height: 40px;
   padding: 10px 20px;
-  margin: 10px 10px 30px 10px;
+  margin: 10px 0 10px 0;
   background-color: #6F3DDA;
   color: #e5e7ebda;
   border: none;
